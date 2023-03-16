@@ -1,9 +1,13 @@
 import React from "react";
+import Main from "../main";
+
 import './app.css';
 
 const App = () => {
     return (
-        <div className="wrapper"></div>
+        <div className="wrapper">
+        <Main />
+        </div>
     )
 }
 

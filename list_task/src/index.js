@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './components/app/app'
+import App from './components/app'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -9,14 +9,5 @@ root.render(
   </React.StrictMode>
 
 );
-
-// react 17
-/**import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-
-ReactDOM.render(<App />, document.getElementById('root'));
-*/
-
 
 console.log('hello')
