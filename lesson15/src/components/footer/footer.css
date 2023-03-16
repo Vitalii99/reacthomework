@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.p_copyright {
+    margin: 44px 104px 41.15px 0px;
+}
+
+.copyright {
+    color: #373737;
+}

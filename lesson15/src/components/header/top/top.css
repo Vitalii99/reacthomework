@@ -1,0 +1,19 @@
+a {
+    text-decoration: none;
+    color: #16A085;
+}
+
+p {
+    margin: 28px 0px;
+}
+
+.nav_bar {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    color: #16A085;
+    text-transform: uppercase;
+}
