@@ -1,0 +1,30 @@
+ul {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    justify-items: center;
+    row-gap: 16px;
+}
+
+li {
+    width: 85%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 8fr repeat(2, 1fr);
+    align-items: center;
+    border-radius: 5px;
+    background-color: whitesmoke;
+
+}
+
+.fa-pencil {
+    padding: 5px;
+    font-size: 18px;
+    color: rgb(111, 245, 111);
+}
+
+.fa-trash-can {
+    padding: 5px;
+    font-size: 18px;
+    color: rgb(245, 140, 158);
+}
