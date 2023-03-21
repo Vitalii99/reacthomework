@@ -18,7 +18,7 @@ class Main extends React.Component {
                     counter: (counter + 1) // (this.state.counter + 1)
                 }
             })
-        } else if (sing === '-') {
+        } else {
             this.setState(({ counter }) => {
                 return {
                     counter: (counter - 1)

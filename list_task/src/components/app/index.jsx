@@ -4,10 +4,10 @@ import Main from "../main";
 import './app.css';
 
 const App = () => {
-    const taskArray = ['First', 'Second', 'Third'];
     return (
         <div className="wrapper">
-            <Main taskArray={taskArray} />
+            <h1>Todo List</h1>
+            <Main />
         </div>
     );
 }
