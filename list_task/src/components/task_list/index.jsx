@@ -3,7 +3,7 @@ import Todo from "./todo";
 
 import './task_list.css';
 
-const TaskList = ({ task, setTask, getUserTime }) => {
+const TaskList = ({ task, setTask }) => {
     return (
         <div className="task_container">
             <ul className="task_list">

@@ -10,9 +10,14 @@ const Input = ({ setInputText, task, setTask, inputText, getUserTime }) => {
     }
     const onSubmitTaskHandler = (e) => {
         e.preventDefault();
-        setTask([...task, { text: inputText, completed: false, id: Math.random() * 1000 + 'b', time: getUserTime() }]);
-        setInputText('');
+        if (inputText === "") {
+            alert('Введіть завдання!')
+        } else {
+            setTask([...task, { text: inputText, completed: false, id: Math.random() * 1000 + 'b', time: getUserTime() }]);
+            setInputText('');
+        }
     }
+    // console.log(inputText)
     return (
         <form className="input">
             <input onChange={onInputTextHandler} type="text" name="text" value={inputText} />

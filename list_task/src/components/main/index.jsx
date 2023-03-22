@@ -20,12 +20,12 @@ const Main = () => {
     function getUserTime(time = new Date()) {
         let date = addZero(time.getDate());
         let month = addZero(time.getMonth());
-        let y = time.getFullYear();
-        let h = addZero(time.getHours());
-        let m = addZero(time.getMinutes());
-        let s = addZero(time.getSeconds());
+        let year = time.getFullYear();
+        let hours = addZero(time.getHours());
+        let minutes = addZero(time.getMinutes());
+        let seconds = addZero(time.getSeconds());
 
-        return `${date}.${month}.${y}  ${h}:${m}:${s}`;
+        return `${date}.${month}.${year}  ${hours}:${minutes}:${seconds}`;
     }
     return (
         <div className="main">
