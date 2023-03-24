@@ -1,0 +1,17 @@
+.wrap_btn{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 2fr 4fr;
+    column-gap: 1%;
+    text-align: center;
+
+}
+
+[type="button"] {
+    height: 100px;
+    display: grid;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
