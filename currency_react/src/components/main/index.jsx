@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 // import data from "../../requests"; // у компоненту section
 // import  {data}  from "../../requests"; якщо export без default
-import Button from "../button";
+import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom"; // Routes потужнє оновлення Switch
+import Btn from "../btn";
 import { Section } from "../section";
+import Home from "../home";
 
-
+import './main.css';
 
 class Main extends Component {
     // state = {
@@ -36,14 +38,32 @@ class Main extends Component {
         return (
             /** лайф-хак обгортка <></>*/
             <>
-                <Button />
-                <Section />
+                <Router>
+                    <header className="wrapBtn">
+                        <NavLink to='/currency-info'>
+                            <Btn value={'Офіційний курс гривні до іноземних валют та облікова ціна банківських металів'} /></NavLink>
+                        <NavLink to='/home'><Btn value={'Home'} /></NavLink>
+                        <NavLink to='/bank-info'><Btn value={'Основні показники діяльності банків України'} /></NavLink>
+                    </header>
+                    <Routes>
+                        <Route exact path="/currency-info" element={
+                            <Section url="https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json" />} />
+                        <Route exact path="/home" element={<Home />} />
+                        <Route exact path="/bank-info" element={
+                            <Section url="https://bank.gov.ua/NBUStatService/v1/statdirectory/basindbank?date=20160101&period=m&json" />} />
+                    </Routes>
+                </Router>
             </>
         )
     }
 }
 
-export default Main
+export default Main;
+
+/**npm install --legacy-peer-deps --save react-router-dom */
 
 /*Офіційний курс гривні до іноземних валют та облікова ціна банківських металів */
-/* https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json */ 
+/* https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json */
+
+/**Основні показники діяльності банків України */
+/**https://bank.gov.ua/NBUStatService/v1/statdirectory/basindbank?date=20160101&period=m&json */

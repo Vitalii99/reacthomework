@@ -1,0 +1,10 @@
+header>a {
+  display: grid;
+  text-decoration: none;
+}
+
+.wrapBtn {
+  display: grid;
+  grid-template-columns: 4fr 2fr 4fr;
+  column-gap: 1%;
+}

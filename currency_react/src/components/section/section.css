@@ -1,0 +1,75 @@
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* DATE TIME */
+h1 {
+    margin: 10px 0px;
+    color: white;
+    text-align: center;
+}
+
+/* FORM TABLE */
+form {
+    display: grid;
+}
+
+/* Table */
+.css-rqglhn-MuiTable-root {
+    background-color: yellow;
+}
+
+/* TableHaed th */
+.css-1ndpvdd-MuiTableCell-root {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* TableRow */
+.css-1q1u3t4-MuiTableRow-root {
+    border-style: hidden;
+}
+
+/* TableRow:hover */
+.css-1q1u3t4-MuiTableRow-root:hover {
+    background-color: rgba(0, 128, 0, 0.3);
+}
+
+/* TableBody*/
+.css-apqrd9-MuiTableBody-root{
+    display: contents;
+}
+
+/* TableCell td */
+.css-1ex1afd-MuiTableCell-root {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* EDIT BUTTON */
+.edit-button {
+    background-color: yellow;
+    border-style: none;
+}
+
+/* check-icon edit-icon */
+.css-i4bv87-MuiSvgIcon-root {
+    cursor: pointer;
+}
+
+/* check-icon edit-icon :hover */
+.css-i4bv87-MuiSvgIcon-root:hover {
+    color: blue;
+}
+
+/* check-icon edit-icon :active */
+.css-i4bv87-MuiSvgIcon-root:active {
+    color: darkred;
+}
+
+/* CHECK BUTTON */
+.check-button {
+    background-color: yellow;
+    border-style: none;
+}
