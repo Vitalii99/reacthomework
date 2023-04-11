@@ -1,0 +1,72 @@
+.wrap {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    column-gap: 1%;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#counter {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 2px 2px 1px 1px gray;
+    font-size: 4rem;
+}
+
+/** CW JS BOOTSTRAP */
+.btn {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+}
+
+.btn-danger {
+    box-shadow: 2px 2px 1px 1px darkred; 
+}
+
+.btn-success {
+    box-shadow: 2px 2px 1px 1px darkgreen; 
+}
+
+.btn-info {
+    width: 200px;
+    box-shadow: 2px 2px 1px 1px darkcyan; 
+}
+
+/** HW REACT */
+.button {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.button:nth-child(3) {
+    box-shadow: 2px 2px 1px 1px darkred;
+    background-color: brown;
+
+}
+
+.button:nth-child(2) {
+    box-shadow: 2px 2px 1px 1px darkolivegreen;
+    background-color: olive;
+}
+
+.button:nth-child(4) {
+    width: 200px;
+    box-shadow: 2px 2px 1px 1px darkslategray;
+    background-color: rgb(6, 100, 143);
+}
