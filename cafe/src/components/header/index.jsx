@@ -28,7 +28,7 @@ const Header = (data) => {
                 <img src="/logo-white.png" alt="MAFIA" title="MAFIA" />
             </a></p>
             <Button variant="outline-success">Відстежити замовлення</Button>{' '}
-            <IconButton aria-label="cart" color="white">
+            <IconButton aria-label="cart">
                 <StyledBadge badgeContent={data.product.length} color="error">
                     <ShoppingCartIcon />
                 </StyledBadge>
