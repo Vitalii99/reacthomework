@@ -1,0 +1,39 @@
+header {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    display: flex;
+    background-color: #000000;
+    position: fixed;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1000;
+}
+
+header>p {
+    margin: 0;
+}
+
+/* dropdown */
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: gray;
+}
+
+/* LOGO */
+[title="MAFIA"] {
+    width: 185px;
+    height: 40px;
+}
+
+/* cart icon */
+.css-i4bv87-MuiSvgIcon-root {
+    color: gray;
+}

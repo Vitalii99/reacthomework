@@ -1,0 +1,47 @@
+footer {
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+    flex-wrap: wrap;
+}
+
+/* FOOTER TOP */
+.footer-top>p {
+    margin: 0;
+}
+
+.footer-top{
+    padding: 20px 0 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+/* LOGO */
+[title="MAFIA"] {
+    width: 185px;
+    height: 40px;
+}
+
+/* FOOTER BOTTOM */
+.order-information {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.description>ul {
+    width: 94%;
+    padding-left: 0;
+}
+
+footer .list-ingredients {
+    overflow-y: scroll;
+    height: 50px;
+    background-color: dimgrey;
+}

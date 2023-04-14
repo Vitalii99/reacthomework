@@ -14,7 +14,7 @@ const ListMain = ({ request }) => {
     // reciving get data user (object)
     const onElementInfo = (value) => {
         setPersonInformation(value);
-        console.dir(value);
+        // console.dir(value);
     }
 
     return (

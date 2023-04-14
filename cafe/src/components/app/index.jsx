@@ -1,12 +1,20 @@
 import React from 'react';
-
-import './app.css';
+import { ErrorBoundary } from '../error-boundary/error-boundary';
+import Footer from '../footer';
+import Header from '../header';
+import Menu from '../menu';
+import { Provider } from 'react-redux';
+import store from '../../redux/store';
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <ErrorBoundary fallback={<p>Something went wrong</p>}>
+      <Provider store={store}>
+        <Header />
+        <Menu />
+        <Footer />
+      </Provider>
+    </ErrorBoundary>
   )
 }
 

@@ -10,6 +10,7 @@ const PersonDetails = () => {
 
   const [information, setInformation] = useState(null);
   const { personInformation } = useContext(PersonContext);
+  console.dir(personInformation)
   const [image, setImage] = useState(null);
 
   useEffect(() => {
