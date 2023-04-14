@@ -1,11 +1,10 @@
 import React from "react";
-import Services from '../services/service';
+import Services from '../../services/service';
 import { connect } from "react-redux";
 import CircularProgress from '@mui/material/CircularProgress';
 import { addProduct } from "../../redux/actions";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './menu.css';
 
