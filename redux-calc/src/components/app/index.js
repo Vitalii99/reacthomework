@@ -10,10 +10,15 @@ export const ACTIONS = {
   CHOOSE_OPERATION: 'choose-operation',
   CLEAR: 'clear',
   EVALUATE: 'evaluate',
+  MEMORY_FUNC: 'memory-func',
 }
 
 // function reducer(state, action)
 function reducer(state, { type, payload }) {
+
+  console.dir(state)
+  console.dir(payload)
+
   switch (type) {
     case ACTIONS.ADD_DIGIT:
       if (state.overwrite) {
@@ -26,7 +31,7 @@ function reducer(state, { type, payload }) {
       if (payload.digit === '0' && state.currentOperand === '0') {
         return state
       }
-      if (payload.digit === '.' && state.currentOperand === '.') { 
+      if (payload.digit === '.' && state.currentOperand === '.') {
         return state
       }
       return {
@@ -78,6 +83,22 @@ function reducer(state, { type, payload }) {
         currentOperand: evaluate(state),
 
       }
+
+
+    /**------------mrc----m----m+------------- */
+    case ACTIONS.MEMORY_FUNC:
+      if (state.operation == null ||
+        state.currentOperand == null ||
+        state.previousOperand == null) {
+        return state;
+      }
+      return {
+        ...state,
+      }
+
+
+    /**-------------------------------------- */
+
     default:
       return state;
   }
@@ -111,7 +132,7 @@ function evaluate({ currentOperand, previousOperand, operation }) {
 const INTEGER_FORMATTER = new Intl.NumberFormat("en-us", {
   maximumFractionDigits: 0,
 })
-function formatOperant (operant) {
+function formatOperant(operant) {
   if (operant == null) return
   const [integer, decimal] = operant.split('.');
   if (decimal == null) return INTEGER_FORMATTER.format(integer)
@@ -136,9 +157,9 @@ const App = () => {
       </div>
       <div className="calc_keyboard">
         {/* top row buttons not working*/}
-        <button>mrc</button>
-        <button>m-</button>
-        <button>m+</button>
+        <button onClick={() => dispatch({ type: ACTIONS.MEMORY_FUNC })}>mrc</button>
+        <button operation="m-" onClick={() => dispatch({ type: ACTIONS.MEMORY_FUNC, payload: { operation } })}>m-</button>
+        <button onClick={() => dispatch({ type: ACTIONS.MEMORY_FUNC })}>m+</button>
         <OperationButton operation="/" dispatch={dispatch} />
         {/* 2 row buttons */}
         <DigitButton digit="7" dispatch={dispatch} />
